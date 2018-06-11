@@ -21,6 +21,7 @@
 		A8EBEC7F20CE6670005EEFDC /* jsCallOC.js in Resources */ = {isa = PBXBuildFile; fileRef = A8EBEC7E20CE6670005EEFDC /* jsCallOC.js */; };
 		A8EBEC8120CE6D86005EEFDC /* fixMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = A8EBEC8020CE6D86005EEFDC /* fixMethod.js */; };
 		A8EBEC8520CE7B8D005EEFDC /* runBeforeInstanceMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = A8EBEC8420CE7B8D005EEFDC /* runBeforeInstanceMethod.js */; };
+		A8EBEC8920CE83D1005EEFDC /* runAfterInstanceMethod.js in Resources */ = {isa = PBXBuildFile; fileRef = A8EBEC8820CE83D1005EEFDC /* runAfterInstanceMethod.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		A8EBEC7E20CE6670005EEFDC /* jsCallOC.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jsCallOC.js; sourceTree = "<group>"; };
 		A8EBEC8020CE6D86005EEFDC /* fixMethod.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = fixMethod.js; sourceTree = "<group>"; };
 		A8EBEC8420CE7B8D005EEFDC /* runBeforeInstanceMethod.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = runBeforeInstanceMethod.js; sourceTree = "<group>"; };
+		A8EBEC8820CE83D1005EEFDC /* runAfterInstanceMethod.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = runAfterInstanceMethod.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				A8EBEC7E20CE6670005EEFDC /* jsCallOC.js */,
 				A8EBEC8020CE6D86005EEFDC /* fixMethod.js */,
 				A8EBEC8420CE7B8D005EEFDC /* runBeforeInstanceMethod.js */,
+				A8EBEC8820CE83D1005EEFDC /* runAfterInstanceMethod.js */,
 			);
 			path = JSFiles;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8EBEC8520CE7B8D005EEFDC /* runBeforeInstanceMethod.js in Resources */,
+				A8EBEC8920CE83D1005EEFDC /* runAfterInstanceMethod.js in Resources */,
 				A8EBEC4820CE5F31005EEFDC /* LaunchScreen.storyboard in Resources */,
 				A8EBEC7B20CE6375005EEFDC /* ocCallJS.js in Resources */,
 				A8EBEC4520CE5F31005EEFDC /* Assets.xcassets in Resources */,

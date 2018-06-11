@@ -21,7 +21,8 @@
     // Override point for customization after application launch.
 //    [self testAspects];
 //    [self fixBug];
-    [self fixBeforeMethod];
+//    [self fixBeforeMethod];
+    [self fixAfterMethod];
     return YES;
 }
 
@@ -44,6 +45,13 @@
 - (void)fixBeforeMethod {
     [FixUtil fix];
     NSString *jsPath = [[NSBundle mainBundle] pathForResource:@"runBeforeInstanceMethod" ofType:@"js"];
+    NSString *jsString = [NSString stringWithContentsOfFile:jsPath encoding:NSUTF8StringEncoding error:nil];
+    [FixUtil runJavaScript:jsString];
+}
+
+- (void)fixAfterMethod {
+    [FixUtil fix];
+    NSString *jsPath = [[NSBundle mainBundle] pathForResource:@"runAfterInstanceMethod" ofType:@"js"];
     NSString *jsString = [NSString stringWithContentsOfFile:jsPath encoding:NSUTF8StringEncoding error:nil];
     [FixUtil runJavaScript:jsString];
 }

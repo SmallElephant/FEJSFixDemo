@@ -17,6 +17,7 @@
 @property (strong, nonatomic) UIButton *ocButtton;
 @property (strong, nonatomic) UIButton *crashButtton;
 @property (strong, nonatomic) UIButton *beforeButtton;
+@property (strong, nonatomic) UIButton *afterButtton;
 @property (strong, nonatomic) NSMutableArray *dataSource;
 
 @end
@@ -82,7 +83,15 @@
 }
 
 - (void)beforeAction:(UIButton *)button {
-     NSLog(@"viewcontroller beforeaction");
+     NSLog(@"viewcontroller beforeAction");
+}
+
+- (void)afterAction:(UIButton *)button {
+    NSLog(@"viewcontroller afterAction");
+}
+
+- (void)afterInstanceMethod:(NSString *)str num:(int)num {
+    NSLog(@"afterInstanceMethod: str=%@, param=%i",str,num);
 }
 
 - (UIButton *)createButton {
@@ -117,6 +126,12 @@
     [self.beforeButtton setTitle:@"before jsCallOCAction" forState:UIControlStateNormal];
     [self.beforeButtton addTarget:self action:@selector(beforeAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.beforeButtton];
+    
+    self.afterButtton = [self createButton];
+    self.afterButtton.frame = CGRectMake(50, 350, 300, 50);
+    [self.afterButtton setTitle:@"after jsCallOCAction" forState:UIControlStateNormal];
+    [self.afterButtton addTarget:self action:@selector(afterAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.afterButtton];
 }
 
 
